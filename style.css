@@ -1,0 +1,273 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+     background-image: url(john-rodenn-castillo-rQqWOHZ96OM-unsplash.jpg);
+}
+
+#body {
+     display: flex;
+     justify-content: space-around;
+     align-items: baseline;
+}
+
+.container {
+     margin: 12px;
+     padding: 9px;
+     border: 1px solid black;
+     width: 333px;
+     background-color: black;
+     color: white;
+     border-radius: 12px;
+}
+
+.container1 {}
+
+.header {
+     margin: 12px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.head2 {
+     display: flex;
+     justify-content: space-between;
+     width: 62px;
+}
+
+.card {
+     display: flex;
+     align-items: center;
+}
+
+button {
+     cursor: pointer;
+     color: white;
+     background: transparent;
+     box-shadow: none;
+     border: none;
+     outline: none;
+}
+
+.card-container {
+     margin-top: 17px;
+     margin-bottom: 4px;
+}
+
+.input-card {
+     outline: none;
+     background: none;
+     border: none;
+     font-size: medium;
+     color: white;
+     padding: 8px;
+     border-radius: 12px;
+     width: 250px;
+     margin-left: 3px;
+}
+
+.input-card::placeholder {
+     color: white;
+}
+
+.input-card:hover {
+     cursor: pointer;
+     background-color: rgb(65, 61, 61);
+}
+
+.but {
+     padding: 9px;
+     border-radius: 12px;
+}
+
+.but:hover {
+     cursor: pointer;
+     background-color: rgb(65, 61, 61);
+}
+
+.input-sec {
+     width: 100%;
+     padding: 6px 12px 35px 10px;
+     border: 2px solid #00b8ff;
+     border-radius: 9px;
+     background: #484040;
+     color: white;
+     font-size: 15px;
+}
+
+.input-sec::placeholder {
+     color: white;
+}
+
+.sec-card {
+     display: none;
+}
+
+.sec-but {
+     background: #0c66e4;
+     padding: 10px;
+     margin-top: 12px;
+     border-radius: 4px;
+     color: black;
+     font-size: 15px;
+}
+
+.sec-but:hover {
+     cursor: pointer;
+     background-color: #0c66e4c9;
+}
+
+.cross {
+     background: none;
+     font-size: larger;
+     padding: 7px;
+     border-radius: 5px;
+}
+
+.cross:hover {
+     cursor: pointer;
+     background-color: #484040;
+}
+
+ul li {
+     background-color: #484040;
+    color: white;
+    list-style: none;
+    padding: 12px 8px 12px 12px;
+    user-select: none;
+    font-size: 17px;
+    position: relative;
+    cursor: pointer;
+    margin: 12px 0px;
+    border-radius: 9px;
+}
+
+ul li::before {
+     content: "";
+     height: 28px;
+     width: 28px;
+     background-size: cover;
+     background-position: center;
+     position: absolute;
+     top: 9px;
+     left: 8px;
+     border-radius: 50%;
+}
+ul li.checked{
+     text-decoration: line-through;
+     color: #555;
+}
+ul li span{
+     position: absolute;
+     height: 40px;
+     width: 40px;
+     right: 0;
+     top: 5px;
+     color: #555;
+     line-height: 40px;
+     font-size: 22px;
+     text-align: center;
+     border-radius: 50%;
+}
+ul li span:hover{
+     background-color: #edeef0;
+}
+.dragging{
+     opacity: 0.5;
+     rotate: 3deg;
+     transform: rotate(3deg);
+     transition: all 0.3s ease-in-out
+}
+
+/* Login Page */
+/* Login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: 50px auto;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Title */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Input group */
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border: 1px solid #2575fc;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.btn-login {
+  background: #2575fc;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background: #1a5ed8;
+}
+
+.btn-signup {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn-signup:hover {
+  background: #ddd;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

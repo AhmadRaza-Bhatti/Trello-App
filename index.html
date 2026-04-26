@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="body">
+      <div class="container1 container">
+        <div class="header">
+          <button>
+            <h3>To Do</h3>
+          </button>
+
+          <div class="head2">
+            <button class="but">
+              <h3><i class="fa-solid fa-arrows-left-right"></i></h3>
+            </button>
+            <button class="but">
+              <h3><i class="fa-solid fa-ellipsis"></i></h3>
+            </button>
+          </div>
+        </div>
+        <div class="card-container" id="card-container1">
+          <ul id="list-container1"></ul>
+          <div class="card" id="card1">
+            <i class="fa-solid fa-plus"></i>
+            <input
+              type="text"
+              placeholder="Add a card"
+              id="card-input1"
+              class="input-card"
+            />
+            <button class="but">
+              <i class="fa-solid fa-images" class="but"></i>
+            </button>
+          </div>
+          <div class="sec-card" id="sec-card1">
+            <input
+              type="text"
+              placeholder="Enter a title or paste a link"
+              id="sec-input1"
+              class="input-sec"
+            />
+            <button class="sec-but" type="button" onclick="addTask1()">
+              Add card
+            </button>
+            <span class="cross" id="cross1" onclick="remove1()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container2 container">
+        <div class="header">
+          <button>
+            <h3>Doing</h3>
+          </button>
+          <div class="head2">
+            <button class="but">
+              <h3><i class="fa-solid fa-arrows-left-right"></i></h3>
+            </button>
+            <button class="but">
+              <h3><i class="fa-solid fa-ellipsis"></i></h3>
+            </button>
+          </div>
+        </div>
+        <div class="card-container" id="card-container2">
+          <ul id="list-container2"></ul>
+          <div class="card" id="card2">
+            <i class="fa-solid fa-plus"></i>
+            <input
+              type="text"
+              placeholder="Add a card"
+              id="card-input2"
+              class="input-card"
+            />
+            <button class="but">
+              <i class="fa-solid fa-images"></i>
+            </button>
+          </div>
+          <div class="sec-card" id="sec-card2">
+            <input
+              type="text"
+              placeholder="Enter a title or paste a link"
+              id="sec-input2"
+              class="input-sec"
+            />
+            <button class="sec-but" type="button" onclick="addTask2()">
+              Add card
+            </button>
+            <span class="cross" id="cross2" onclick="remove2()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container3 container">
+        <div class="header">
+          <button>
+            <h3>Done</h3>
+          </button>
+          <div class="head2">
+            <button class="but">
+              <h3><i class="fa-solid fa-arrows-left-right"></i></h3>
+            </button>
+            <button class="but">
+              <h3><i class="fa-solid fa-ellipsis"></i></h3>
+            </button>
+          </div>
+        </div>
+        <div class="card-container" id="card-container3">
+          <ul id="list-container3"></ul>
+          <div class="card" id="card3">
+            <i class="fa-solid fa-plus"></i>
+            <input
+              type="text"
+              placeholder="Add a card"
+              id="card-input3"
+              class="input-card"
+            />
+            <button class="but">
+              <i class="fa-solid fa-images" class="but"></i>
+            </button>
+          </div>
+          <div class="sec-card" id="sec-card3">
+            <input
+              type="text"
+              placeholder="Enter a title or paste a link"
+              id="sec-input3"
+              class="input-sec"
+            />
+            <button class="sec-but" type="button" onclick="addTask3()">
+              Add card
+            </button>
+            <span class="cross" id="cross3" onclick="remove3()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Section -->
+    <div id="login-page" class="login-container">
+      <h2 id="login_heading">Welcome Back</h2>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <button onclick="errorMessage()" class="btn btn-login">Login</button>
+      <button class="btn btn-signup">Sign Up</button>
+      <p id="error-message" style="color: red; font-size: small; display:none ;"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
